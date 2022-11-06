@@ -8,10 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-
-
-
+    <div id="container">
+        <div id="display"></div>
+        <div id="keyboard">
+            <div id="upperContainer">
+                <div id="numberContainer">
+                    
+                    <button class="number" class="display">1</button>
+                    <button class="number" class="display">2</button>
+                    <button class="number" class="display">3</button>
+                    <button class="number" class="display">4</button>
+                    <button class="number" class="display">5</button>
+                    <button class="number" class="display">6</button>
+                    <button class="number" class="display">7</button>
+                    <button class="number" class="display">8</button>
+                    <button class="number" class="display">9</button>
+                    <button class="number" class="display">0</button>
+                </div>
+                <div id="operatorContainer">
+                    <button class="operator" class="display">+</button>
+                    <button class="operator" class="display">-</button>
+                    <button class="operator" class="display">/</button>
+                    <button class="operator" class="display">x</button>
+                    <button class="operator" class="display">xx</button>
+                    <!-- <button class="operator" class="display">SQR</button> -->
+                </div> 
+           </div>
+            <div id="bottomContainer">
+                <button class="operator" class="display">=</button>
+                <button id="clear" onclick="reset()">Clear</button>
+            </div>
+        </div>
+        
+    </div>
 
 
     <script src="script.js"></script>
