@@ -8,41 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Calculator</h1>
     <div id="container">
-        <div id="display"></div>
+        <div id="display">
+            <div data-prevOp id="calc"></div>
+            <div data-currentOp id="result"></div>
+        </div>
         <div id="keyboard">
             <div id="upperContainer">
                 <div id="numberContainer">
                     
-                    <button class="number" class="display">1</button>
-                    <button class="number" class="display">2</button>
-                    <button class="number" class="display">3</button>
-                    <button class="number" class="display">4</button>
-                    <button class="number" class="display">5</button>
-                    <button class="number" class="display">6</button>
-                    <button class="number" class="display">7</button>
-                    <button class="number" class="display">8</button>
-                    <button class="number" class="display">9</button>
-                    <button class="number" class="display">0</button>
+                    <button data-number class="number">1</button>
+                    <button data-number class="number">2</button>
+                    <button data-number class="number">3</button>
+                    <button data-number class="number">4</button>
+                    <button data-number class="number">5</button>
+                    <button data-number class="number">6</button>
+                    <button data-number class="number">7</button>
+                    <button data-number class="number">8</button>
+                    <button data-number class="number">9</button>
+                    <button data-delete class="delete">Del</button>
+                    <button data-number class="number">0</button>
+                    <button data-number class="number" >,</button>
                 </div>
                 <div id="operatorContainer">
-                    <button class="operator" class="display">+</button>
-                    <button class="operator" class="display">-</button>
-                    <button class="operator" class="display">/</button>
-                    <button class="operator" class="display">x</button>
-                    <button class="operator" class="display">xx</button>
-                    <!-- <button class="operator" class="display">SQR</button> -->
+                    <button data-operation class="operator">+</button>
+                    <button data-operation class="operator">-</button>
+                    <button data-operation class="operator">/</button>
+                    <button data-operation class="operator">x</button>
+                    <button data-operation class="operator">xx</button>
+                    <!-- <button class="operator" >SQR</button> -->
                 </div> 
            </div>
             <div id="bottomContainer">
-                <button class="operator" class="display">=</button>
-                <button id="clear" onclick="reset()">Clear</button>
+                <button data-equal id="equal" >=</button>
+                <button  data-clear id="clear">Clear</button>
             </div>
         </div>
         
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="new.js"></script>
 </body>
 </html>
